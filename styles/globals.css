@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+    max-height: 100%;
+}
+
+input, textarea, select{
+    @apply border border-gray-300 rounded-md px-1;
+    @apply mb-2;
+}
+input:focus, textarea:focus, select:focus{
+    @apply border-blue-900;
+}
+h1{
+    @apply text-blue-900 mb-2 text-xl;
+}
+label{
+    @apply text-blue-900;
+}
+.btn-primary{
+    @apply bg-blue-900 text-white px-4 py-1 rounded-md;
+}
+table.basic{
+    @apply w-full;
+}
+table.basic thead tr td{
+    @apply bg-blue-100
+}
+table.basic tr td{
+    @apply border border-blue-200 p-1;
+}
+table.basic a{
+    @apply bg-blue-900 text-white text-sm py-1 px-2 rounded-md inline-flex gap-1 mr-1;
+}
+.btn-default, .btn-red{
+    @apply px-4 py-1 rounded-md;
+}
+
+.btn-red{
+    @apply bg-red-800 text-white;
+}
+.btn-default{
+    @apply bg-gray-500 text-white;
+}
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add space between each element */
+    width: 300px; /* You can adjust this width as needed */
+  }
+  
+  .product-form label {
+    font-weight: bold;
+  }
+  
+  .product-form input,
+  .product-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Make input elements take full width of form */
+  }
